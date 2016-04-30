@@ -9,7 +9,7 @@ public class test1 {
 	public static void main(String args[])
 	{
 		Scanner ino=null;
-		
+	
 		try {
 			ArrayList<Double> arraylist=new ArrayList<Double>();
 			ino=new Scanner(new File(System.getProperty("user.dir")+"/data/ceshidata.txt"));
