@@ -1,0 +1,48 @@
+symbol,name,security_type,exchange,sector,industry,list_date,delist_date,is_delisted,shares_outstanding,market_cap_latest
+AAPL,Apple Inc.,EQUITY,NasdaqGS,Technology,Consumer Electronics,1980-12-12,,False,14594180000,4912984883200.0
+MSFT,Microsoft Corporation,EQUITY,NasdaqGS,Technology,Software - Infrastructure,1986-03-13,,False,7425545491,3973186846720.0
+GOOGL,Alphabet Inc.,EQUITY,NasdaqGS,Communication Services,Internet Content & Information,2004-08-19,,False,5867155790,4300779028480.0
+AMZN,"Amazon.com, Inc.",EQUITY,NasdaqGS,Consumer Cyclical,Internet Retail,1997-05-15,,False,10786313572,2830652145664.0
+NVDA,NVIDIA Corporation,EQUITY,NasdaqGS,Technology,Semiconductors,1999-01-22,,False,24147000000,5536424132608.0
+META,"Meta Platforms, Inc.",EQUITY,NasdaqGS,Communication Services,Internet Content & Information,2012-05-18,,False,2205128509,1830816186368.0
+TSLA,"Tesla, Inc.",EQUITY,NasdaqGS,Consumer Cyclical,Auto Manufacturers,2010-06-29,,False,3949547394,1511491895296.0
+BRK-B,Berkshire Hathaway Inc. New,EQUITY,NYSE,Financial Services,Insurance - Diversified,1996-05-09,,False,1408035161,1103792701440.0
+JPM,JP Morgan Chase & Co.,EQUITY,NYSE,Financial Services,Banks - Diversified,1980-03-17,,False,2658186195,885149401088.0
+V,Visa Inc.,EQUITY,NYSE,Financial Services,Credit Services,2008-03-19,,False,1704112694,723626622976.0
+UNH,UnitedHealth Group Incorporated,EQUITY,NYSE,Healthcare,Healthcare Plans,1984-10-17,,False,897594847,340457717760.0
+XOM,ExxonMobil Holdings Corporation,EQUITY,NYSE,Energy,Oil & Gas Integrated,1962-01-02,,False,4111911960,694666395648.0
+JNJ,Johnson & Johnson,EQUITY,NYSE,Healthcare,Drug Manufacturers - General,1962-01-02,,False,2409898597,630043836416.0
+WMT,Walmart Inc.,EQUITY,NasdaqGS,Consumer Defensive,Discount Stores,1972-08-25,,False,7933746241,883422593024.0
+MA,Mastercard Incorporated,EQUITY,NYSE,Financial Services,Credit Services,2006-05-25,,False,869464115,516092493824.0
+PG,Procter & Gamble Company (The),EQUITY,NYSE,Consumer Defensive,Household & Personal Products,1962-01-02,,False,2324433060,351524028416.0
+HD,"Home Depot, Inc. (The)",EQUITY,NYSE,Consumer Cyclical,Home Improvement Retail,1981-09-22,,False,997689626,290068267008.0
+CVX,Chevron Corporation,EQUITY,NYSE,Energy,Oil & Gas Integrated,1962-01-02,,False,1961603274,415820677120.0
+MRK,"Merck & Company, Inc.",EQUITY,NYSE,Healthcare,Drug Manufacturers - General,1962-01-02,,False,2467171638,359220183040.0
+ABBV,AbbVie Inc.,EQUITY,NYSE,Healthcare,Drug Manufacturers - General,2013-01-02,,False,1767117285,488554921984.0
+KO,Coca-Cola Company (The),EQUITY,NYSE,Consumer Defensive,Beverages - Non-Alcoholic,1962-01-02,,False,4302549243,378839465984.0
+PEP,"Pepsico, Inc.",EQUITY,NasdaqGS,Consumer Defensive,Beverages - Non-Alcoholic,1972-06-01,,False,1362741092,171664506880.0
+AVGO,Broadcom Inc.,EQUITY,NasdaqGS,Technology,Semiconductors,2009-08-06,,False,4773629865,1725858185216.0
+COST,Costco Wholesale Corporation,EQUITY,NasdaqGS,Consumer Defensive,Discount Stores,1986-07-09,,False,443129349,419608035328.0
+AMD,"Advanced Micro Devices, Inc.",EQUITY,NasdaqGS,Technology,Semiconductors,1980-03-17,,False,1632475042,992708001792.0
+NFLX,"Netflix, Inc.",EQUITY,NasdaqGS,Communication Services,Entertainment,2002-05-23,,False,4163939676,292724965376.0
+CRM,"Salesforce, Inc.",EQUITY,NYSE,Technology,Software - Application,2004-06-23,,False,823000000,188573990912.0
+ADBE,Adobe Inc.,EQUITY,NasdaqGS,Technology,Software - Application,1986-08-13,,False,389200000,94291484672.0
+INTC,Intel Corporation,EQUITY,NasdaqGS,Technology,Semiconductors,1980-03-17,,False,5286105262,553455190016.0
+ORCL,Oracle Corporation,EQUITY,NYSE,Technology,Software - Infrastructure,1986-03-12,,False,3031501149,428654231552.0
+BAC,Bank of America Corporation,EQUITY,NYSE,Financial Services,Banks - Diversified,1973-02-21,,False,6992748365,379846098944.0
+WFC,Wells Fargo & Company,EQUITY,NYSE,Financial Services,Banks - Diversified,1972-06-01,,False,3023999336,252655140864.0
+DIS,Walt Disney Company (The),EQUITY,NYSE,Communication Services,Entertainment,1962-01-02,,False,1726686902,186568523776.0
+PFE,"Pfizer, Inc.",EQUITY,NYSE,Healthcare,Drug Manufacturers - General,1972-06-01,,False,5699673589,161186775040.0
+CSCO,"Cisco Systems, Inc.",EQUITY,NasdaqGS,Technology,Communication Equipment,1990-02-16,,False,3942586873,466762858496.0
+T,AT&T Inc.,EQUITY,NYSE,Communication Services,Telecom Services,1983-11-21,,False,6852385650,151985913856.0
+VZ,Verizon Communications Inc.,EQUITY,NYSE,Communication Services,Telecom Services,1983-11-21,,False,4154775202,173046398976.0
+IBM,International Business Machines,EQUITY,NYSE,Technology,Information Technology Services,1962-01-02,,False,942134390,213986983936.0
+QCOM,QUALCOMM Incorporated,EQUITY,NasdaqGS,Technology,Semiconductors,1991-12-13,,False,1067839507,187405828096.0
+TXN,Texas Instruments Incorporated,EQUITY,NasdaqGS,Technology,Semiconductors,1972-06-01,,False,913247686,259124887552.0
+SPY,State Street SPDR S&P 500 ETF T,ETF,NYSEArca,,,1993-01-29,,False,917782016,
+QQQ,"Invesco QQQ Trust, Series 1",ETF,NasdaqGM,,,1999-03-10,,False,393100000,
+IWM,iShares Russell 2000 Index Fund,ETF,NYSEArca,,,2000-05-26,,False,281049984,
+DIA,State Street SPDR Dow Jones Ind,ETF,NYSEArca,,,1998-01-20,,False,81242896,
+RIVN,"Rivian Automotive, Inc.",EQUITY,NasdaqGS,Consumer Cyclical,Auto Manufacturers,2021-11-10,,False,1443948130,20212133888.0
+PLTR,Palantir Technologies Inc.,EQUITY,NasdaqGS,Technology,Software - Infrastructure,2020-09-30,,False,2300713329,502359359488.0
+SNOW,Snowflake Inc.,EQUITY,NYSE,Technology,Software - Application,2020-09-16,,False,352800000,130144395264.0

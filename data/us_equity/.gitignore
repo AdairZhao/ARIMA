@@ -1,0 +1,5 @@
+daily/
+daily_market_cap.parquet
+universe_listed.csv
+errors.csv
+run_meta.json
