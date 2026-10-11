@@ -1,0 +1,15 @@
+symbol,date,split_ratio,split_kind
+AAPL,2020-08-31,4.0,split
+GOOGL,2022-07-18,20.0,split
+AMZN,2022-06-06,20.0,split
+NVDA,2021-07-20,4.0,split
+NVDA,2024-06-10,10.0,split
+TSLA,2020-08-31,5.0,split
+TSLA,2022-08-25,3.0,split
+WMT,2024-02-26,3.0,split
+MRK,2021-06-03,1.048,split
+AVGO,2024-07-15,10.0,split
+NFLX,2025-11-17,10.0,split
+PFE,2020-11-17,1.054,split
+T,2022-04-11,1.324,split
+IBM,2021-11-04,1.046,split

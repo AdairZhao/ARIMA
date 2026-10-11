@@ -1,0 +1,43 @@
+{
+  "splits": {
+    "symbol": "代码",
+    "date": "拆股/合股生效日",
+    "split_ratio": "拆股比例 (>1 拆股, <1 合股)",
+    "split_kind": "split | reverse_split"
+  },
+  "securities": {
+    "symbol": "代码",
+    "name": "名称",
+    "security_type": "证券类型",
+    "exchange": "交易所",
+    "sector": "板块",
+    "industry": "行业",
+    "list_date": "上市日期",
+    "delist_date": "退市日期",
+    "is_delisted": "是否退市",
+    "shares_outstanding": "最新总股本",
+    "market_cap_latest": "最新市值"
+  },
+  "shares_outstanding": {
+    "symbol": "代码",
+    "date": "观测日",
+    "shares_outstanding": "总股本"
+  },
+  "daily": {
+    "symbol": "代码",
+    "date": "交易日",
+    "close": "收盘价",
+    "shares_outstanding": "当日总股本(填充)",
+    "market_cap": "每日市值 = close × shares"
+  },
+  "coverage": {
+    "market": "US",
+    "start": "2016-01-01",
+    "end": "today"
+  },
+  "dividends": {
+    "symbol": "代码",
+    "date": "除息日",
+    "dividend": "每股分红(USD)"
+  }
+}

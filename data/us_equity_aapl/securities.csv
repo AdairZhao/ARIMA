@@ -1,0 +1,2 @@
+symbol,name,security_type,exchange,sector,industry,list_date,delist_date,is_delisted,shares_outstanding,market_cap_latest
+AAPL,Apple Inc.,EQUITY,NasdaqGS,Technology,Consumer Electronics,1980-12-12,,False,14594180000,4912984883200
