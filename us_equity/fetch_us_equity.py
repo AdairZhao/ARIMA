@@ -119,6 +119,7 @@ def main() -> int:
 
     masters: list[dict] = []
     splits_all: list[pd.DataFrame] = []
+    dividends_all: list[pd.DataFrame] = []
     shares_all: list[pd.DataFrame] = []
     errors: list[dict] = []
 
@@ -130,6 +131,8 @@ def main() -> int:
             masters.append(bundle["master"])
             if bundle["splits"] is not None and not bundle["splits"].empty:
                 splits_all.append(bundle["splits"])
+            if bundle.get("dividends") is not None and not bundle["dividends"].empty:
+                dividends_all.append(bundle["dividends"])
             if bundle["shares"] is not None and not bundle["shares"].empty:
                 shares_all.append(bundle["shares"])
             daily = bundle["daily"]
@@ -148,6 +151,13 @@ def main() -> int:
         else pd.DataFrame(columns=["symbol", "date", "split_ratio", "split_kind"])
     )
     splits_df.to_csv(out / "splits.csv", index=False)
+
+    dividends_df = (
+        pd.concat(dividends_all, ignore_index=True)
+        if dividends_all
+        else pd.DataFrame(columns=["symbol", "date", "dividend"])
+    )
+    dividends_df.to_csv(out / "dividends.csv", index=False)
 
     shares_df = (
         pd.concat(shares_all, ignore_index=True)
@@ -171,6 +181,7 @@ def main() -> int:
         "outputs": {
             "securities": str(out / "securities.csv"),
             "splits": str(out / "splits.csv"),
+            "dividends": str(out / "dividends.csv"),
             "shares_outstanding": str(out / "shares_outstanding.csv"),
             "daily_dir": str(daily_dir),
             "daily_parquet": str(out / "daily_market_cap.parquet"),
@@ -181,9 +192,10 @@ def main() -> int:
         pd.DataFrame(errors).to_csv(out / "errors.csv", index=False)
 
     logger.info(
-        "Done. securities=%d splits=%d share_obs=%d errors=%d",
+        "Done. securities=%d splits=%d dividends=%d share_obs=%d errors=%d",
         len(securities),
         len(splits_df),
+        len(dividends_df),
         len(shares_df),
         len(errors),
     )

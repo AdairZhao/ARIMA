@@ -121,6 +121,33 @@ def fetch_security_master(symbol: str) -> dict:
     }
 
 
+def fetch_dividends(symbol: str, start: str = START_DEFAULT) -> pd.DataFrame:
+    """Cash dividends since start."""
+    ticker = yf.Ticker(symbol)
+    try:
+        div = ticker.dividends
+    except Exception as exc:  # noqa: BLE001
+        logger.debug("dividends failed for %s: %s", symbol, exc)
+        return pd.DataFrame(columns=["symbol", "date", "dividend"])
+
+    if div is None or len(div) == 0:
+        return pd.DataFrame(columns=["symbol", "date", "dividend"])
+
+    s = div.copy()
+    s.index = pd.to_datetime(s.index).tz_localize(None)
+    s = s[s.index >= pd.Timestamp(start)]
+    if s.empty:
+        return pd.DataFrame(columns=["symbol", "date", "dividend"])
+
+    return pd.DataFrame(
+        {
+            "symbol": symbol,
+            "date": s.index.date.astype(str),
+            "dividend": s.values.astype(float),
+        }
+    ).reset_index(drop=True)
+
+
 def fetch_splits(symbol: str, start: str = START_DEFAULT) -> pd.DataFrame:
     """Stock splits / reverse splits since start."""
     ticker = yf.Ticker(symbol)
@@ -275,6 +302,7 @@ def fetch_all_for_symbol(
     """Fetch master + splits + shares history + daily market cap for one symbol."""
     master = fetch_security_master(symbol)
     splits = fetch_splits(symbol, start=start)
+    dividends = fetch_dividends(symbol, start=start)
     shares = fetch_shares_history(symbol, start=start)
     daily = fetch_daily_market_cap(symbol, start=start, end=end, shares_history=shares)
     if sleep_s:
@@ -282,6 +310,7 @@ def fetch_all_for_symbol(
     return {
         "master": master,
         "splits": splits,
+        "dividends": dividends,
         "shares": shares,
         "daily": daily,
     }

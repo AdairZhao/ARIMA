@@ -34,5 +34,10 @@
     "market": "US",
     "start": "2016-01-01",
     "end": "today"
+  },
+  "dividends": {
+    "symbol": "代码",
+    "date": "除息日",
+    "dividend": "每股分红(USD)"
   }
 }
