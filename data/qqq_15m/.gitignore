@@ -1,0 +1,3 @@
+cache/
+*.parquet
+__pycache__/

@@ -1,0 +1,7 @@
+yfinance>=0.2.40
+pandas>=2.0
+pyarrow>=14.0
+numpy>=1.26
+requests>=2.31
+tqdm>=4.66
+huggingface_hub>=0.23

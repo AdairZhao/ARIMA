@@ -1,0 +1,36 @@
+{
+  "symbol": "QQQ",
+  "interval": "15m",
+  "start": "2016-10-14",
+  "end": "2026-10-14",
+  "rows": 63284,
+  "first_bar": "2016-10-14 09:30:00",
+  "last_bar": "2026-10-13 15:45:00",
+  "unique_trading_days": 2436,
+  "source_counts": {
+    "huggingface_1m": 47341,
+    "finnhub_hf_1m": 14409,
+    "yahoo_15m": 1534
+  },
+  "known_gap": {
+    "start": "2026-04-01",
+    "end": "2026-07-21",
+    "reason": "mito0o852/OHLCV-1m monthly files end 2026-03; Yahoo 15m only covers last ~60 days",
+    "companion_file": "data/qqq_15m/QQQ_1h_gap_2026Q2.csv",
+    "fill_command": "python3 qqq_15m/fetch_qqq_15m.py --start 2026-04-01 --end 2026-07-21 --skip-finnhub --dukascopy"
+  },
+  "generated_at": "2026-10-14T11:34:47Z",
+  "notes": [
+    "Regular trading hours only (09:30\u201316:00 America/New_York).",
+    "Maxim37 HF: 2016-10-14 \u2192 2024-01-10 (1m\u219215m).",
+    "mito0o852/OHLCV-1m Finnhub: 2024-01-11 \u2192 2026-03-31 (1m\u219215m).",
+    "Yahoo native 15m: ~2026-07-22 \u2192 2026-10-13.",
+    "Residual 15m gap 2026-04 \u2192 2026-07 covered by companion 1h file; optional Dukascopy fill available."
+  ],
+  "outputs": {
+    "csv": "data/qqq_15m/QQQ_15m.csv",
+    "parquet": "data/qqq_15m/QQQ_15m.parquet",
+    "daily_csv": "data/qqq_15m/QQQ_1d.csv",
+    "gap_1h_csv": "data/qqq_15m/QQQ_1h_gap_2026Q2.csv"
+  }
+}
